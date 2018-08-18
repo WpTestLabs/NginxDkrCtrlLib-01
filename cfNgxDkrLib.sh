@@ -5,7 +5,7 @@ mkdir -p  $KnBasHP/{etc/$KnPkgN/conf.d,log/$KnPkgN}  #xx $WwwDfltSwc $WwwPrfl/Al
 [[ -e $SrvEtcKnz/$KnN ]] || ln -srf $SrvEtcKnz/$KnN  $KnBasHP 
 #xx [[ -e $SrvEtcKnz/$KnPkgN ]] || ln -sf $SrvEtcKnz/$KnN $SrvEtcKnz/$KnPkgN
 [[ -e $KnBasHP/etc/$KnPkgN/nginx.conf ]] || \
-			cp -rd $SrvLib/ngxCnf/v1/* $KnBasHP/etc/$KnPkgN/
+			cp -rd $SrvLib/ngx/$DkrRtImgN/$KnConfVer/* $KnBasHP/etc/$KnPkgN/
 [[ -e $KnBasHP/srv ]] || ln -sf ../.. $KnBasHP/srv;  # '/srv/' mimics Guest View of FSH
 [[ -e $KnBasHP/etc/nginx/Prfl ]] || ln -sf ../../srv/www/Prfl $KnBasHP/etc/nginx/Prfl
 [[ -e $KnBasHP/etc/nginx/conf.d/WwwPrfl.conf ]] || \
