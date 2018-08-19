@@ -9,7 +9,7 @@ mkdir -p  $KnBasHP/{etc/$KnPkgN/conf.d,log/$KnPkgN}  #xx $WwwDfltSwc $WwwPrfl/Al
 [[ -e $KnBasHP/srv ]] || ln -sf ../.. $KnBasHP/srv;  # '/srv/' mimics Guest View of FSH
 [[ -e $KnBasHP/etc/nginx/Prfl ]] || ln -sf ../../srv/www/Prfl $KnBasHP/etc/nginx/Prfl
 [[ -e $KnBasHP/etc/nginx/conf.d/WwwPrfl.conf ]] || \
-			ln -sf ../Prfl/All/all-ngx.inc $KnBasHP/etc/nginx/conf.d/WwwPrfl.conf
+			ln -sf ../Prfl/All/All-ngx.inc $KnBasHP/etc/nginx/conf.d/WwwPrfl.conf
 fi			#tt	tree -ACa  $KnBasHP;		tree -ACaL 3 $SrvWww;		exit;
 .	$SrvLib/cfDkrCtrlLib.sh
 aTail () { echo -e "\n\n\ntail -n100 $KnLogHP/access.log;"
